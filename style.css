@@ -1,0 +1,83 @@
+.div1 {
+    width: 300px;
+    height: 100px;
+    border: 3px solid rgb(231, 50, 50);
+    background-color: plum;
+    box-sizing: border-box;
+  }
+  
+  .div2 {
+    width: 300px;
+    height: 100px;  
+    padding: 30px;
+    border: 3px solid rgb(35, 221, 181);
+    background-color: rgb(135, 250, 219);
+    box-sizing: border-box;
+  }
+  .ani{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(181, 3, 181);
+    border: 5px solid teal;
+    padding: 10px;
+    border-radius: 3px;
+  }
+  .ani:hover{ 
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-iteration-count: 10;
+}
+@keyframes example {
+    50%{
+        width: 400px;
+        background-color: lightcoral;
+    }
+}
+
+.box{
+    width: 150px;
+    height: 120px;
+    background-color: rgb(225, 166, 175);
+    border: 3px dotted purple;
+    padding: 30px;
+    margin: 20px;
+}
+.container{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(248, 145, 145);
+    border: 3px solid rgb(155, 11, 88);
+    margin: 10px;
+}
+#div-2{
+    display: none;
+}
+#div-4{
+    visibility: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    background-color: #146ab0;
+    padding: 5px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-row: 1 / span 2;
+  }
+  .gridc{
+    background-color: rgb(210, 159, 167);
+  }
+  .item-2{
+    grid-column: 2/4;
+  }
